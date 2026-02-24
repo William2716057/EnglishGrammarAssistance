@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini Voice Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gemini Voice</h1>
+        <button id="mic-btn">Click to Speak</button>
+        <div id="status">Status: Ready</div>
+        <div class="display">
+            <p><strong>You:</strong> <span id="user-text">...</span></p>
+            <p><strong>Gemini:</strong> <span id="ai-text">...</span></p>
+        </div>
+
+        <div id="status">Status: Ready</div>
+        <div style="width: 100%; bg: #eee; height: 10px; border-radius: 5px; margin: 10px 0;">
+            <div id="volume-bar" style="width: 0%; height: 100%; background: green; transition: width 0.1s;"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
