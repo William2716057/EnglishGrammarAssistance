@@ -12,3 +12,8 @@
 - Web Speech API (SpeechRecognition + SpeechSynthesis)
 - Web Audio API (AnalyserNode)
 - Google Gemini API (gemini-2.5-flash)
+
+# Features
+- Real-Time Microphone Volume Monitor
+- Live Microphone capture
+- Visual volume level display
