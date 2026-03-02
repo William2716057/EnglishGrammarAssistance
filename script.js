@@ -1,3 +1,4 @@
+//to allow user to know if microphone is working or to speak louder 
 async function startVolumeMonitor() {
     try {
         const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
@@ -91,7 +92,7 @@ async function getGeminiResponse(text) {
     const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${API_KEY}`;
 
     const requestBody = {
-        // THIS IS WHERE YOU DEFINE THE ROLE
+        // Prompt to define the role that 
         system_instruction: {
             parts: [{
                 text: "You are an English tutor. The user will give you a sentence in English. Your ONLY job is to: 1. If the sentence is correct, give a supportive response 2. If it has errors, provide a brief correction in Japanese and explain why. Keep responses very short."
@@ -101,7 +102,7 @@ async function getGeminiResponse(text) {
             parts: [{ text: text }]
         }]
     };
-
+    //error handling
     try {
         const response = await fetch(url, {
             method: "POST",
