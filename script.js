@@ -21,7 +21,7 @@ async function startVolumeMonitor() {
 }
 startVolumeMonitor();
 
-const API_KEY = "AIzaSyD8MZ5uBmdKMAi4z8i8fjTmIX9JW6HRzVA"; //API key here
+const API_KEY = ""; //API key here
 const micBtn = document.getElementById('mic-btn');
 const statusText = document.getElementById('status');
 const userDisplay = document.getElementById('user-text');
@@ -94,7 +94,7 @@ async function getGeminiResponse(text) {
         // THIS IS WHERE YOU DEFINE THE ROLE
         system_instruction: {
             parts: [{
-                text: "You are an English tutor. The user will give you a sentence in English. Your ONLY job is to: 1. If the sentence is correct, say 'Well done!' 2. If it has errors, provide a brief correction and explain why. Keep responses very short."
+                text: "You are an English tutor. The user will give you a sentence in English. Your ONLY job is to: 1. If the sentence is correct, give a supportive response 2. If it has errors, provide a brief correction in Japanese and explain why. Keep responses very short."
             }]
         },
         contents: [{
