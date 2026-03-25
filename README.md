@@ -2,6 +2,7 @@
 
 
 <img width="508" height="488" alt="grammarApp" src="https://github.com/user-attachments/assets/4efff798-9f1d-427c-bf93-25d908530be3" />
+
 ## A browser-based AI English speaking tutor that:
 - Listens to user speech
 - Displays real-time microphone volume feedback
